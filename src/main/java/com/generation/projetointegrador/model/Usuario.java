@@ -13,7 +13,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -27,7 +26,6 @@ public class Usuario {
 	@NotBlank(message = "O atributo nome é Obrigatório!")
 	private String nome;
 
-	@NotNull(message = "O atributo usuario é Obrigatório!")
 	@Size(min = 10, max = 100, message = "O atributo texto deve conter no mínimo 10 e no máximo 100 caracteres")
 	private String usuario;
 
